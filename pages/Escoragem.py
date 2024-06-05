@@ -1,7 +1,7 @@
-import streamlit as st
-from models.instance import SKLEARN_MODEL
 import pandas as pd
+import streamlit as st
 
+from models.instance import SKLEARN_MODEL, X_TRAIN_COLUMNS
 
 file = st.file_uploader(label="Seu arquivo de escoragem", type=["ftr", "csv", "xlsx"])
 
@@ -19,6 +19,9 @@ if file is not None:
         )
 
     X = pd.get_dummies(df)
+    for col in X_TRAIN_COLUMNS:
+        if col not in X.columns:
+            X[col] = 0
 
     pred = SKLEARN_MODEL.predict(X)
 

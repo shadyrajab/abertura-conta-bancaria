@@ -1,7 +1,7 @@
-import streamlit as st
 import pandas as pd
+import streamlit as st
+
 from models.instance import SKLEARN_MODEL, X_TRAIN_COLUMNS
-from sklearn.preprocessing import StandardScaler
 
 st.title("Simulação abertura de conta bancária")
 
@@ -77,9 +77,10 @@ for col in X_TRAIN_COLUMNS:
     if col not in X.columns:
         X[col] = 0
 
-scaler = StandardScaler()
-scaled = scaler.fit_transform(X)
 
-print(scaled)
-result_sklearn = SKLEARN_MODEL.predict(scaled)
-print(result_sklearn)
+result_sklearn = SKLEARN_MODEL.predict(X)
+
+if result_sklearn == 0:
+    st.title("Parabéns, sua solicitação de crédito foi aprovada com sucesso!")
+else:
+    st.title("Infelizmente não poderemos te oferecer crédito!")
