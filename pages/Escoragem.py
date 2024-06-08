@@ -24,5 +24,7 @@ if file is not None:
             X[col] = 0
 
     pred = SKLEARN_MODEL.predict(X)
-
-    st.write(pred)
+    df["Recebeu Crédito?"] = df["Recebeu Crédito?"] = pd.Series(pred).map(
+        {1: "Sim", 0: "Não"}
+    )
+    st.dataframe(df, hide_index=True)
