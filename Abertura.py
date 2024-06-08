@@ -9,7 +9,9 @@ sexo = st.selectbox(label="Qual seu sexo?", options=["M", "F"])
 posse_de_veiculo = st.selectbox(label="Você possui veículo?", options=["S", "N"])
 posse_de_imovel = st.selectbox(label="Você possui imóvel?", options=["S", "N"])
 qtd_filhos = st.number_input(
-    label="Você possui filhos? Se sim, quantos?(informe 0 caso não tenha)"
+    label="Você possui filhos? Se sim, quantos?(informe 0 caso não tenha)",
+    step=1,
+    format="%d",
 )
 tipo_renda = st.selectbox(
     label="Qual seu tipo de renda?",
@@ -46,9 +48,13 @@ tipo_residencia = st.selectbox(
         "Estúdio",
     ],
 )
-idade = st.number_input(label="Qual sua idade?")
-tempo_emprego = st.number_input(label="Quanto tempo você tem de emprego?(em meses)")
-qt_pessoas_residencia = st.number_input(label="Quantas pessoas moram na sua casa?")
+idade = st.number_input(label="Qual sua idade?", step=1, format="%d")
+tempo_emprego = st.number_input(
+    label="Quanto tempo você tem de emprego?(em meses)", step=1, format="%d"
+)
+qt_pessoas_residencia = st.number_input(
+    label="Quantas pessoas moram na sua casa?", step=1, format="%d"
+)
 renda = st.number_input(label="Qual sua renda mensal aproximada? ")
 
 
