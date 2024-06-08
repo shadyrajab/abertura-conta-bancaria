@@ -33,26 +33,23 @@ Este projeto é uma aplicação web interativa desenvolvida em Python usando Str
 1. Clone o repositório para sua máquina local:
 
 ```sh
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
-python -m venv venv
-pip install -r requirements.txt
-streamlit run Abertura.py
+git clone https://github.com/shadyrajab/abertura-conta-bancaria.git
+cd abertura-conta-bancaria
 ```
 
-abertura-conta-bancaria/
-│
-├── pages/
-│   └── Escoragem.py   # Página de escoragem e predição
-├── models/
-│   └── instance.py   # Leitura do modelo usando pickle
-├── test/
-│   └── model_scoring.ftr   # Arquivo para testar a predição dos dados
-│
-├── Abertura.py             # Arquivo principal da aplicação
-├── requirements.txt   # Arquivo de dependências do projeto
-└── README.md          # Documentação do projeto
-└── Criando o Modelo.ipynb   # Notebook para construção e treinamento do modelo preditivo
+2. Crie um ambiente virtual:
+```sh
+python -m venv venv
+```
+3. Instale as dependências:
+```sh
+pip install -r requirements.txt
+```
+
+# Executando a Aplicação
+```sh
+streamlit run Abertura.py
+```
 
 # Construção do Modelo Preditivo
 
