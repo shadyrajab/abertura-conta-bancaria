@@ -56,7 +56,7 @@ abertura-conta-bancaria/
 
 # Construção do Modelo Preditivo
 
-O modelo preditivo utilizado na aplicação foi construído no notebook modelo_credito.ipynb. Fique a vontade para ler o notebook e entender todo o processo!
+O modelo preditivo utilizado na aplicação foi construído no notebook Criando o Modelo.ipynb. Fique a vontade para ler o notebook e entender todo o processo!
 
 Para testar a funcionalidade de predição dos dados, um arquivo de teste model_scoring.ftr foi disponibilizado na pasta test/. Esse arquivo pode ser utilizado para verificar a precisão da predição do modelo antes de aplicá-lo a novos dados.
 
