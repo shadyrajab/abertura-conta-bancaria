@@ -61,4 +61,6 @@ O modelo preditivo utilizado na aplicação foi construído no notebook Criando 
 Para testar a funcionalidade de predição dos dados, um arquivo de teste model_scoring.ftr foi disponibilizado na pasta test/. Esse arquivo pode ser utilizado para verificar a precisão da predição do modelo antes de aplicá-lo a novos dados.
 
 
+Você também pode acessar o projeto e fazer um teste através deste link: https://abertura-conta-bancaria.streamlit.app/
+
 [streamlit-Abertura-2024-06-05-17-06-00.webm](https://github.com/shadyrajab/projeto-final-ebac/assets/65933264/887cb654-dc6a-47b4-97f7-be2a7650e9e7)
